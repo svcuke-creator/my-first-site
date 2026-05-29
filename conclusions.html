@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выводы и анкетирование — Образование 21 века</title>
+    <style>
+        :root { --dark-bg: #1D2026; --main-blue: #4D5AE5; --accent-green: #00C292; --light-bg: #F4F6F9; --text-main: #2B2D42; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: var(--light-bg); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
+        header { background-color: var(--dark-bg); color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--main-blue); }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { color: #A0A5B5; margin-top: 10px; }
+        nav { background-color: #2A2F3D; display: flex; justify-content: center; gap: 15px; padding: 12px 0; }
+        nav a { text-decoration: none; color: #E2E8F0; padding: 10px 20px; font-weight: 600; border-radius: 6px; }
+        nav a:hover { background-color: var(--main-blue); color: white; }
+        .main-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
+        .conclusions-wrap {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        .conclusions-wrap h2 { color: var(--dark-bg); margin-top: 0; border-bottom: 2px solid var(--main-blue); padding-bottom: 10px; }
+        
+        form { background-color: #F8FAFC; padding: 30px; border: 1px solid #E2E8F0; border-radius: 8px; }
+        .form-group { margin-bottom: 20px; }
+        label { font-weight: 600; display: block; margin-bottom: 8px; color: var(--dark-bg); }
+        input, select, textarea {
+            width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 6px;
+            box-sizing: border-box; background-color: white; font-family: sans-serif; font-size: 1em;
+        }
+        input:focus, select:focus, textarea:focus { border-color: var(--main-blue); outline: none; box-shadow: 0 0 0 3px rgba(77,90,229,0.15); }
+        
+        button {
+            background-color: var(--main-blue); color: white; border: none; padding: 14px 30px;
+            border-radius: 6px; cursor: pointer; font-size: 1em; font-weight: bold; transition: background 0.2s;
+        }
+        button:hover { background-color: #3B46B8; }
+        
+        footer { background-color: var(--dark-bg); color: #A0A5B5; text-align: center; padding: 25px; margin-top: 60px; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ИТОГИ И ЭКСПЕРТНАЯ ОЦЕНКА</h1>
+        <p>Итоговые аналитические выводы исследования и сбор статистических метрик</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="problems.html">Проблемы и решения</a>
+        <a href="ai_knowledge.html">База знаний: ИИ</a>
+        <a href="conclusions.html" style="background-color: var(--main-blue); color: white;">Выводы и опрос</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="conclusions-wrap">
+            <h2>Глобальные выводы исследования</h2>
+            <p>В ходе комплексного аналитического исследования трендов EdTech и архитектур ИИ в XXI веке были сформулированы следующие выводы:</p>
+            <ol>
+                <li><strong>Смена ролевой модели:</strong> Искусственный интеллект перестает быть просто справочной системой. Он берет на себя функции автоматического подбора траекторий и первичного ревью кода/текстов, коренным образом меняя роль преподавателя в сторону фасилитатора.</li>
+                <li><strong>Конвергенция технологий:</strong> Максимальная эффективность обучения достигается на стыке современных LMS-платформ, асинхронного модульного подхода и внедрения промпт-инжиниринга как сквозного навыка.</li>
+                <li><strong>Неизбежность адаптации:</strong> Образовательные учреждения, игнорирующие применение ИИ, в ближайшие годы столкнутся со снижением конкурентоспособности выпускников на мировом рынке труда. Основная задача — учить системному взаимодействию со сложными алгоритмами ИИ, а не запрещать их.</li>
+            </ol>
+        </div>
+
+        <div class="conclusions-wrap">
+            <h2>Сбор данных: Социологический срез и верификация гипотез</h2>
+            <form onsubmit="alert('Сведения успешно верифицированы и отправлены в базу аналитики.'); return false;">
+                
+                <div class="form-group">
+                    <label for="status">Ваш профессиональный статус:</label>
+                    <select id="status">
+                        <option value="student">Студент / Учащийся</option>
+                        <option value="expert">Эксперт / Преподаватель</option>
+                        <option value="employer">Представитель EdTech / Работодатель</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ai-level">Оцените потенциал внедрения LLM-моделей в вашей практике:</label>
+                    <select id="ai-level">
+                        <option value="high">Критически высокий (полная автоматизация процессов)</option>
+                        <option value="medium">Умеренный (в качестве вспомогательного ассистента)</option>
+                        <option value="low">Низкий / Отрицательный (риски плагиата перевешивают пользу)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback">Ваше экспертное мнение и предложения по модернизации образовательных экосистем:</label>
+                    <textarea id="feedback" rows="5" placeholder="Напишите развернутый комментарий..."></textarea>
+                </div>
+
+                <button type="submit">Отправить экспертный отзыв</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Информационно-аналитический портал модернизации образования</p>
+    </footer>
+
+</body>
+</html>

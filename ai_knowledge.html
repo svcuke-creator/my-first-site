@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База знаний по ИИ — EduFuture XXI</title>
+    <style>
+        :root { --bg-color: #f4f6f9; --main-dark: #1d2026; --accent-blue: #4d5ae5; --accent-purple: #7b2cbf; --text-dark: #2d3436; --card-bg: #ffffff; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: var(--bg-color); color: var(--text-dark); margin: 0; padding: 0; line-height: 1.7; }
+        header { background: linear-gradient(135deg, var(--main-dark) 0%, #2c3e50 100%); color: white; padding: 60px 20px; text-align: center; position: relative; }
+        header::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); }
+        header h1 { font-size: 2.8em; margin: 0 0 10px 0; text-transform: uppercase; }
+        nav { background-color: var(--main-dark); display: flex; justify-content: center; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        nav a { text-decoration: none; color: #dfe6e9; padding: 10px 25px; margin: 0 10px; font-weight: 600; border-radius: 6px; transition: all 0.3s ease; }
+        nav a:hover { background-color: var(--accent-blue); color: white; }
+        
+        .main-wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            padding: 0 20px;
+        }
+        .sidebar-menu {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border: 1px solid #e2e8f0;
+        }
+        .sidebar-menu h4 {
+            margin: 0 0 15px 0;
+            color: var(--main-dark);
+            font-size: 1.1em;
+            text-transform: uppercase;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+        .sidebar-menu a {
+            display: block;
+            color: #64748b;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+            font-size: 0.95em;
+            transition: all 0.2s ease;
+        }
+        .sidebar-menu a:hover {
+            background-color: #f1f5f9;
+            color: var(--accent-blue);
+        }
+        .content-area {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 45px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid #e2e8f0;
+        }
+        .section-ai {
+            margin-bottom: 50px;
+            scroll-margin-top: 120px;
+        }
+        .section-ai h2 {
+            color: var(--main-dark);
+            font-size: 1.8em;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        .info-pill {
+            background: linear-gradient(90deg, rgba(7d, 90, 229, 0.05), rgba(123, 44, 191, 0.05));
+            border-left: 4px solid var(--accent-purple);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        footer { background-color: var(--main-dark); color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1px solid #334155; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>База знаний: Интеллектуальные системы</h1>
+        <p>Глубокое исследование архитектуры ИИ-агентов в рамках образовательной парадигмы</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="problems.html">Проблемы и решения</a>
+        <a href="ai_knowledge.html" style="background-color: var(--accent-blue); color: white;">База знаний: ИИ</a>
+        <a href="conclusions.html">Выводы и опрос</a>
+    </nav>
+
+    <div class="main-wrapper">
+        <aside class="sidebar-menu">
+            <h4>Навигация по базе</h4>
+            <a href="#section1">1. LLM и Промпт-инжиниринг</a>
+            <a href="#section2">2. Адаптивные нейросети</a>
+            <a href="#section3">3. Компьютерное зрение</a>
+            <a href="#section4">4. Этический комплаенс</a>
+        </aside>
+
+        <main class="content-area">
+            
+            <section id="section1" class="section-ai">
+                <h2>1. Языковые модели (LLM) и Промпт-инжиниринг в педагогике</h2>
+                <p>Большие языковые модели на базе архитектуры Transformer кардинально меняют процесс работы со справочной информацией. Вместо монотонного чтения учебников учащийся развертывает контекстуальный сократический диалог с моделью.</p>
+                <div class="info-pill">
+                    <strong>Практический кейс:</strong> Промпт-инжиниринг становится новой метадисциплиной. Школьники учатся формулировать запросы («Действуй как профессор астрофизики. Объясни теорию струн простыми словами, используя аналогию с музыкальными инструментами...»), развивая системное мышление и точность формулировок. Модели мгновенно адаптируют уровень сложности под конкретный запрос.
+                </div>
+                <p>Для преподавателей LLM автоматизируют генерацию многовариантных проверочных заданий, планов уроков и методических рекомендаций, экономя до 40% рабочего времени, которое теперь можно направить на живую эмпатичную работу с учащимися.</p>
+            </section>
+
+            <section id="section2" class="section-ai">
+                <h2>2. Адаптивные нейросети и предиктивный скоринг</h2>
+                <p>Адаптивные интеллектуальные системы (ITS — Intelligent Tutoring Systems) собирают полный цифровой след учащегося. Они анализируют скорость прохождения модулей, типы ошибок в коде или математических матрицах, время раздумий над сложными вопросами и даже уровень утомляемости.</p>
+                <p>На основе этих данных алгоритмы машинного обучения формируют персональные рекомендации в реальном времени. Если ученик демонстрирует стопор на тригонометрических уравнениях, ИИ временно сужает траекторию, предлагая интерактивный разбор геометрии треугольника, ликвидируя когнитивный дефицит до того, как он превратится в хроническую неуспеваемость.</p>
+            </section>
+
+            <section id="section3" class="section-ai">
+                <h2>3. Компьютерное зрение (CV) и XR-симуляции</h2>
+                <p>Технологии компьютерного зрения в синергии со смешанной реальностью (XR) превращают абстрактные абстракции в осязаемый интерактивный опыт. Нейросети способны отслеживать жесты, фокус внимания и действия ученика в виртуальной среде.</p>
+                <p>Это открывает доступ к проведению сложнейших и опасных химических реакций, симуляции ядерных процессов, хирургическим операциям или макроэкономическому моделированию городов прямо в аудитории, без затрат на дорогостоящее физическое оборудование и реактивы.</p>
+            </section>
+
+            <section id="section4" class="section-ai">
+                <h2>4. Этический комплаенс и вызовы академической честности</h2>
+                <p>Интеграция ИИ порождает масштабный вызов: повсеместное использование генеративных сетей для бездумного списывания эссе, сочинений и решения математических задач. Запреты в данном случае абсолютно неэффективны.</p>
+                <p><strong>Трансформация подходов:</strong> Школа обязана изменить формат домашних заданий. Фокус смещается с проверки «готового ответа» на защиту процесса его получения. Оценивается умение аргументировать логику ИИ, находить галлюцинации и ошибки в генерациях нейросетей, а также комбинировать различные ИИ-инструменты для решения комплексных проектных задач.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Научно-исследовательский портал модернизации образования. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

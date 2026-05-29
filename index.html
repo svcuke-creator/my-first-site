@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа развития образования XXI века</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --main-dark: #1d2026;
+            --accent-blue: #4d5ae5;
+            --accent-purple: #7b2cbf;
+            --text-dark: #2d3436;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: linear-gradient(135deg, var(--main-dark) 0%, #2c3e50 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.3em;
+            color: #b2bec3;
+            margin: 0;
+        }
+        nav {
+            background-color: var(--main-dark);
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #dfe6e9;
+            padding: 10px 25px;
+            margin: 0 10px;
+            font-size: 1em;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.active {
+            background-color: var(--accent-blue);
+            color: white;
+            box-shadow: 0 4px 12px rgba(77, 90, 229, 0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .hero-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            border-left: 6px solid var(--accent-blue);
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+            border-color: #cbd5e1;
+        }
+        .card h3 {
+            color: var(--main-dark);
+            margin-top: 0;
+            font-size: 1.4em;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+        .accent-text {
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+        footer {
+            background-color: var(--main-dark);
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 0.95em;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EduFuture XXI</h1>
+        <p>Глобальная экосистема трансформации образовательных процессов</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Главная</a>
+        <a href="problems.html">Проблемы и решения</a>
+        <a href="ai_knowledge.html">База знаний: ИИ</a>
+        <a href="conclusions.html">Выводы и опрос</a>
+    </nav>
+
+    <div class="container">
+        <div class="hero-section">
+            <h2>Глобальный манифест новой школы</h2>
+            <p>Добро пожаловать на аналитический портал, посвященный фундаментальной перестройке образовательных подходов. Архитектура классической школы создавалась в эпоху индустриальной революции для подготовки фабричных рабочих. Сегодня, в эпоху тотальной автоматизации и расцвета когнитивных технологий, эта модель окончательно зашла в тупик.</p>
+            <p>Наш проект предлагает комплексный взгляд на то, как школа должна адаптироваться к вызовам новой технологической реальности, внедряя персонализацию, искусственный интеллект и проектное мышление.</p>
+        </div>
+
+        <h2 style="text-align:center; margin-top: 60px;">Ключевые векторы развития</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>01 / Персонализация</h3>
+                <p>Отказ от уравнительной системы «один учитель на 30 человек». Переход к индивидуальным трекам развития, учитывающим врожденные когнитивные особенности, скорость обработки данных и личные интересы каждого учащегося.</p>
+            </div>
+            <div class="card">
+                <h3>02 / Практикоориентированность</h3>
+                <p>Ликвидация мертвого груза абстрактной теории. Обучение строится вокруг решения реальных кейсов (Case-based learning) и создания коммерческих, социальных или научных проектов в процессе учебы.</p>
+            </div>
+            <div class="card">
+                <h3>03 / ИИ-сопровождение</h3>
+                <p>Интеграция интеллектуальных агентов в качестве круглосуточных цифровых тьюторов. Автоматизация рутинной проверки знаний, глубинная предиктивная аналитика потенциала и точечный подбор образовательного контента.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Научно-исследовательский портал модернизации образования. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

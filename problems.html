@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проблемы и решения — EduFuture XXI</title>
+    <style>
+        :root { --bg-color: #f4f6f9; --main-dark: #1d2026; --accent-blue: #4d5ae5; --accent-purple: #7b2cbf; --text-dark: #2d3436; --card-bg: #ffffff; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: var(--bg-color); color: var(--text-dark); margin: 0; padding: 0; line-height: 1.7; }
+        header { background: linear-gradient(135deg, var(--main-dark) 0%, #2c3e50 100%); color: white; padding: 60px 20px; text-align: center; position: relative; }
+        header::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); }
+        header h1 { font-size: 2.8em; margin: 0 0 10px 0; text-transform: uppercase; }
+        nav { background-color: var(--main-dark); display: flex; justify-content: center; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        nav a { text-decoration: none; color: #dfe6e9; padding: 10px 25px; margin: 0 10px; font-weight: 600; border-radius: 6px; transition: all 0.3s ease; }
+        nav a:hover { background-color: var(--accent-blue); color: white; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .problem-card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 40px;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border: 1px solid #e2e8f0;
+        }
+        .problem-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .badge-problem {
+            background-color: #ff7675;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 0.9em;
+        }
+        .badge-solution {
+            background-color: #2ed573;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 0.9em;
+        }
+        .solution-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #2ed573;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        footer { background-color: var(--main-dark); color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1px solid #334155; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Анализ деструктивных факторов</h1>
+        <p>Глубинная деконструкция кризиса образования и дорожная карта реформ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="problems.html" style="background-color: var(--accent-blue); color: white;">Проблемы и решения</a>
+        <a href="ai_knowledge.html">База знаний: ИИ</a>
+        <a href="conclusions.html">Выводы и опрос</a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="problem-card">
+            <div class="problem-header">
+                <span class="badge-problem">КРИЗИС №1</span>
+                <h2>Фрагментированность и неактуальность контента</h2>
+            </div>
+            <p>Современные школьные программы перегружены огромным массивом фактологических данных, которые стремительно устаревают. Учеников заставляют заучивать формулы и даты, доступные в один клик в любом поисковике. При этом полностью игнорируется развитие метапредметных компетенций: информационной гигиены, финансовой грамотности, базового программирования и психологической саморегуляции.</p>
+            
+            <div class="solution-box">
+                <div style="display:flex; align-items:center; margin-bottom: 10px;">
+                    <span class="badge-solution">РЕШЕНИЕ EduFuture</span>
+                </div>
+                <strong>Переход на динамические модульные программы (Dynamic Curriculum):</strong> Школа должна отказаться от жестких многолетних учебников. Ядро знаний должно оперативно обновляться каждые 1-2 года на основе анализа рынка труда и технологического прогресса. Внедрение обязательных курсов по критическому мышлению, проверке фактов (фактчекингу) и управлению личным капиталом.
+            </div>
+        </div>
+
+        <div class="problem-card">
+            <div class="problem-header">
+                <span class="badge-problem">КРИЗИС №2</span>
+                <h2>Фронтальная классно-урочная система Я.А. Коменского</h2>
+            </div>
+            <p>Модель обучения, разработанная почти 400 лет назад, базируется на одновременном изучении одного материала группой детей одинакового возраста. Это полностью игнорирует индивидуальный темп восприятия (когнитивный темп). В результате «средний» ученик скучает, отстающий окончательно теряет нить и мотивацию, а сильный искусственно тормозится в развитии.</p>
+            
+            <div class="solution-box">
+                <div style="display:flex; align-items:center; margin-bottom: 10px;">
+                    <span class="badge-solution">РЕШЕНИЕ EduFuture</span>
+                </div>
+                <strong>Асинхронные траектории и смешанное обучение (Blended Learning):</strong> Классические лекционные часы переводятся в интерактивный цифровой формат, который школьник осваивает дома в своем темпе. Очные занятия в школе трансформируются в сессии групповой работы, дебатов, лабораторных исследований и менторских встреч с учителями, выступающими в роли фасилитаторов и коучей.
+            </div>
+        </div>
+
+        <div class="problem-card">
+            <div class="problem-header">
+                <span class="badge-problem">КРИЗИС №3</span>
+                <h2>Репродуктивная система оценки знаний (Страх ошибки)</h2>
+            </div>
+            <p>Существующая тестовая и пятибалльная шкала оценивает исключительно способность воспроизвести зазубренный материал по шаблону. Система жестко наказывает за ошибки снижением балла, формируя у детей паттерн выученной беспомощности и страх перед любыми экспериментами. Это полностью убивает креативность и предпринимательский дух, критически необходимые в современном мире.</p>
+            
+            <div class="solution-box">
+                <div style="display:flex; align-items:center; margin-bottom: 10px;">
+                    <span class="badge-solution">РЕШЕНИЕ EduFuture</span>
+                </div>
+                <strong>Критериальный геймифицированный скоринг (XP-система):</strong> Замена штрафной пятибалльной системы на накопительную, аналогичную RPG-играм. Ученик не теряет оценки за ошибки, а зарабатывает опыт (XP) за выполненные задачи, исследовательские вылазки и защиту проектов. Ошибка позиционируется как естественная и ценная часть научного метода познания, а не повод для наказания.
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Научно-исследовательский портал модернизации образования. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
